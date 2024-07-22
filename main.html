@@ -1,39 +1,148 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
+<html lang="en">
+
+<head>
     <style>
-      table{
+        h2 {
+            text-align: center;
+        }
+
+        table, td {
+            border:1px solid black;
+        }
+         
+
+        table {
+            width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+       .middle{
+	margin-left:auto;
+	margin-right:auto;
+}
+.table-2{
+	padding:10px;
+}
+
+table-3{
         border: 1px solid black;
-        border-collapse: collapse;
-      }
-      td{
-        border: 1px solid black;
-      }
+ margin: 0 auto;         }
+      
+
       .green{
         background-color: green;
+		  text-align:center;
       }
       
       .blue{
         background-color: blue;
-      }
-      
+		  text-align:center;
+      }
     </style>
-  </head>
-  <body>
-    <table id="table-3">
-      <tr class="green">
-        <td>Header 1</td>
-      </tr>
-      
-      <tr>
-        <td id="t-image"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"></td>
-      </tr>
-      
-      <tr class="blue">
-        <td>Footer</td>
-      </tr>
-    </table>
-  </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+</head>
+
+<body>
+    <h2>HTML Assignment #3</h2>
+    <table class="middle">
+        <thead>
+            <tr>
+                <td class="left Common">left</td>
+                <td class="center Common">center</td>
+                <td class="right Common">right</td>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="left Common">left</td>
+                <td class="center Common">center</td>
+                <td class="right Common">right</td>
+
+            </tr>
+            <tr>
+                <td class="left Common">left</td>
+                <td class="center Common">center</td>
+                <td class="right Common">right</td>
+
+            </tr>
+        </tbody>
+    </table><br>
+    <table class="middle">
+		
+        <tr>
+        <td  colspan ="6"class="table-2"></td>
+        </tr>
+        
+        <tr>
+        <td  rowspan ="4" class="table-2"></td>
+        <td class="table-2"></td>
+        <td class="table-2"></td>
+        <td class="table-2"></td>
+        <td class="table-2"></td>
+        <td class="table-2"></td>
+        </tr>
+
+    <tr>
+        <td class="table-2"></td>
+        <td rowspan="2"colspan="3" class="table-2"></td>
+        <td class="table-2"></td>
+        
+        
+        </tr>
+
+    <tr>
+        <td class="table-2"></td>
+        <td colspan="3"class="table-2"></td>
+        
+        </tr>
+
+    <tr>
+        <td class="table-2"></td>
+        <td class="table-2"></td>
+        <td class="table-2"></td>
+        <td class="table-2"></td>
+        <td class="table-2"></td>
+        
+        
+        </tr>
+
+    <tr>
+        <td colspan ="6" class="table-2"></td>
+        
+        </tr>
+</table><br><br>
+    <table>
+  <tr class="green">
+    <td>Header</td>
+  </tr>
+  
+  <tr>	<td align="center" id="t-image"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"></td>
+  </tr>
+  
+  <tr class="blue">
+    <td>Footer</td>
+  </tr>
+</table>
+                
+</table>
+<script type="text/javascript" src="./script.js">
+</script>
+</body>
 </html>
